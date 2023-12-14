@@ -28,7 +28,7 @@ public class Target : MonoBehaviour
         StartCoroutine(LifeTimeCoroutine(lifeTime));
     }
 
-    void Update()
+    void FixedUpdate()
     {
         transform.position += Vector3.back * speed;
     }
@@ -43,7 +43,7 @@ public class Target : MonoBehaviour
     IEnumerator LifeTimeCoroutine(float time)
     {
         yield return new WaitForSeconds(time);
-        rigidbody.AddForce(Vector3.up * impactForse); // нужно что бы вызвать срабатывание метода  OnCollisionExit в классе Road
+        rigidbody.AddForce(Vector3.up * impactForse); 
         Destroy(gameObject, 0.01f);
         NotHited?.Invoke(penaltyCost);
     }

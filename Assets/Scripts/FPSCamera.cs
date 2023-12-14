@@ -22,7 +22,7 @@ public class FPSCamera : MonoBehaviour
     }
     private void GameManager_OnStateChanged(object sender, System.EventArgs e)
     {
-        if (GameManager.Instance.IsGameOver()) // если игра окончена включаем курсор и отключаем работу скрипта
+        if (GameManager.Instance.IsGameOver())
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;

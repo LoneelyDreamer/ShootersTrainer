@@ -48,7 +48,7 @@ public class Bow : MonoBehaviour
             Target target = hit.transform.GetComponent<Target>();
             if (target != null)
             {
-                target.HitTarget(hit); // передаю значения RaycastHit в Target чтобы прекрепить префаб стрелы в точке попадания
+                target.HitTarget(hit); 
             }
 
             if (hit.rigidbody != null)

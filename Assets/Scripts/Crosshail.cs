@@ -19,7 +19,7 @@ public class Crosshail : MonoBehaviour
 
     private void Bow_OnShoot(object sender, System.EventArgs e)
     {
-        sizeCurrent = sizeAfterShoot; //увеличиваем прицел после выстрела
+        sizeCurrent = sizeAfterShoot; 
     }
 
     private void Update()

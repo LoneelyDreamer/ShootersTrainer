@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     private float countdownToStartTimer = 3f;
     private float gamePlayingTimer = 30f;
     private int currentScore = 0;
-    private enum State  // стадии игры
+    private enum State 
     {
         WaitingToStart,
         CountdownToStart,
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
 
     private void Target_NotHited(int penaltyCost)
     {
-        currentScore -= penaltyCost; // если мишень не была поражена за время жизни отнимае балл
+        currentScore -= penaltyCost;
         if (currentScore < 0)
         {
             currentScore = 0;
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
 
     private void Target_OnHited(int targetScore)
     {
-        currentScore += targetScore;   // при поподании начисляем баллы
+        currentScore += targetScore;   
     }
 
     private void Update()

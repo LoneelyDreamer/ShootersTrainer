@@ -467,7 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6b6ddca970b9f4587787d5484bd8d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.03
+  speed: 0.12
   arrow: {fileID: 1235643651700502652, guid: 3b9fd931129e8124090a65e90443d748, type: 3}
   scoreCost: 6
   lifeTime: 2
